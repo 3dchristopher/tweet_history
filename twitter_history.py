@@ -48,6 +48,8 @@ def get_parser():
     return parser
 
 if __name__ == '__main__':
+    q = open("users.txt",'a')
+    q.close()
     parser = get_parser()
     args = parser.parse_args()
     filename = []
