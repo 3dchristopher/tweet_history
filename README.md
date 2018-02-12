@@ -5,10 +5,10 @@ In order to make use of the program, you must first generate Twitter API keys. U
 
 Once you have your keys, rename the "config.txt" file to "config.py", and put each of the four keys in the variable lines within the "config.py" file.
 
-`consumer_key = 'put your consumer key here'`
-`consumer_secret = 'put your consumer secret key here'`
-`access_token = 'put your access token here'`
-`access_token_secret = 'put your access secret token here'`
+`consumer_key = 'put your consumer key here'`\n
+`consumer_secret = 'put your consumer secret key here'`\n
+`access_token = 'put your access token here'`\n
+`access_token_secret = 'put your access secret token here'`\n
 
 ## Compiling
 **Important Note**: When this program runs, it will attempt to access **every** .json file in its directory. Make sure that you have only the .json files you wish to run the program on in the directory before starting.
