@@ -5,7 +5,7 @@ In order to make use of the program, you must first generate Twitter API keys. U
 
 Once you have your keys, rename the "config.txt" file to "config.py", and put each of the four keys in the variable lines within the "config.py" file.
 
-`consumer_key = 'put your consumer key here'`\n
+`consumer_key = 'put your consumer key here'\n`
 `consumer_secret = 'put your consumer secret key here'`\n
 `access_token = 'put your access token here'`\n
 `access_token_secret = 'put your access secret token here'`\n
