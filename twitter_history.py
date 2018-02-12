@@ -52,10 +52,6 @@ if __name__ == '__main__':
     args = parser.parse_args()
     filename = []
     keywords= args.keywords.split(',')
-    #argCount=len(sys.argv)
-    #while argCount > 1:
-    #    filename.append(sys.argv[argCount-1])
-    #    argCount-=1
     for fn in os.listdir(os.getcwd()):
         if fn[-5:] == ".json":
             filename.append(fn.strip('\''))
@@ -73,13 +69,6 @@ if __name__ == '__main__':
         for line in lines:
             data=json.loads(line)
             user.append(data["user"]["screen_name"])
-    #for f in filename:
-    #    #read_objects(f)
-    #    json_file=open(f, 'r')
-    #    json_decode=json.load(json_file)
-    #    for item in json_decode:
-    #        print item
-    #        user.append(item.get("user").get("screen_name"))
     user = list(set(user))
     #print user
     with open("users.txt","w") as uw:
@@ -90,7 +79,7 @@ if __name__ == '__main__':
     with open(fname, 'w') as f:
         for u in user:
             #try:
-            print(str(uCount)+" of "+str(len(user))+"| Retrieving " + users + " history")
+            print(str(uCount)+" of "+str(len(u))+"| Retrieving " + users + " history")
             rcVal=1
             tweet_pull(u, uCount, keywords, rcVal)
             #except error.TweepError:
