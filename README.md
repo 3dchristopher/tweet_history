@@ -32,5 +32,5 @@ Due to request limitations by Twitter's API, the program will occasionally be de
 If you see this line show up in the command prompt, **do not close the command window and attempt to retry the program.** The program will automatically retry to pull tweets every so often, until the requests are once again allowed by the Twitter API.
 
 ## Output
-As the program is running, tweets will be written to the output file. If you specified an output file name in your command line, the output file will be named "<Insert Filename Here>.jsonl" If you have not chosen an output name, the standard output file will be called "tweet_history.jsonl".
+As the program is running, tweets will be written to the output file. If you specified an output file name in your command line, the output file will be named "<\Insert Filename Here\>.jsonl" If you have not chosen an output name, the standard output file will be called "tweet_history.jsonl".
 A seperate file called "users.txt" will also be created, holding the Twitter screennames searched by the main program. This file can be used later to pull information from the same collection of Twitter users if desired.
